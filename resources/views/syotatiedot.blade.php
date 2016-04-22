@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>Työsuojelu-dokumentit helposti yrityksesi käyttöön!</title>
 
        
         <!-- include libraries(jQuery, bootstrap) -->
@@ -170,7 +170,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Tyoturvallisuussuunnitelma.fi</a>
+      <a class="navbar-brand" href="#">Tyosuojelu.com</a>
      
     </div>
 
@@ -236,10 +236,13 @@
     <label for="formGroupExampleInput2">Riskiarvioiden vakiovalinnat</label>
     <select class="form-control" name="riskiasetus">
         <option value="ei">Ei riskejä</option>
-        <option value="random">Random</option>
+       <!-- <option value="random">Random</option>
         <option value="kaikki">Toimistotyö on vaarallista! (ns. hupivaihtoehto)</option>
+        -->
     </select>
+    <span style="font-size: 12px;" id="helpBlock" class="help-block">Toistaiseksi vain "Ei riskejä" valittavana. Lisäämme tähän eri vaihtoehtoja myöhemmin!</span>
   </fieldset>   
+  <!--
   <fieldset class="form-group">
     <label for="formGroupExampleInput2">PDF-dokumenttien header-teksti (max. 1024 merkkiä)</label>
     <input type="text" class="form-control" value="{{old('docheader')}}" id="formGroupExampleInput2" name="docheader" placeholder="Nollaversio IT | työsuojeludokumentointi">
@@ -249,6 +252,7 @@
     <input type="text" class="form-control" value="{{old('docfooter')}}" id="formGroupExampleInput2" name="docfooter" placeholder="Top secret - arkistoitava huolella">
     <span style="font-size: 12px;" id="helpBlock" class="help-block"><i>Footer sisältää automaattisesti generoidut sivunumerot, päiväyksen ja dokumentin nimen vakiona. Sinun ei välttämättä siis tarvitse lisätä lainkaan omaa footer-tekstiä.</span>
   </fieldset>  
+  -->
   <hr>
   <button class="btn btn-primary" type="submit">Generoi pohjat</button>   
 </form>  
@@ -263,7 +267,7 @@
 </div>
     <footer class="footer" style="background-color: #eee;">
       <div class="container" style="text-align: center; background-color: #eee;">
-        <p class="text-muted">Tyoturvallisuussuunnitelma.fi generoi syöttämiesi tietojen pohjalta pinkan työturvallisuusdokumentteja yrityksesi käyttöön! <br>
+        <p class="text-muted">Tyosuojelu.com generoi syöttämiesi tietojen pohjalta pinkan työturvallisuusdokumentteja yrityksesi käyttöön! <br>
             Palvelun totetus: <a target="_blank" href="http://nollaversio.fi">Nollaversio IT </a> | Palvelun dokumenttipohjat: <a href="http://lyyti.fi" target="_blank" >Lyyti Oy</a></p>
       </div>
       <hr>

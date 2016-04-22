@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
-
+        <title>Työsuojeludokumentit helposti pk-yrityksille</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Tyosuojelu.com tuottaa työsuojelusuunnitelmat ja dokumentit automaattisesti. Syötä vain firmasi tiedot ja järjestelmä hoitaa loput.">
        
         <!-- include libraries(jQuery, bootstrap) -->
         <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
@@ -168,7 +169,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Tyoturvallisuussuunnitelma.fi</a>
+      <a class="navbar-brand" href="#">Tyosuojelu.com</a>
      
     </div>
 
@@ -266,7 +267,7 @@
         </div>
     <footer class="footer">
       <div class="container" style="text-align: center;">
-        <p class="text-muted">Tyoturvallisuussuunnitelma.fi tuottaa syöttämiesi tietojen pohjalta pinkan työturvallisuusdokumentteja yrityksesi käyttöön! <br>
+        <p class="text-muted">Tyosuojelu.com tuottaa syöttämiesi tietojen pohjalta pinkan työsuojeludokumentteja yrityksesi käyttöön! <br>
             Palvelun tuottajat: <a href="http://nollaversio.fi">Nollaversio IT</a> ja <a href="http://lyyti.fi">Lyyti Oy</a></p>
       </div>
     </footer>
