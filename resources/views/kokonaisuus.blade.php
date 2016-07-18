@@ -6,7 +6,7 @@
         <meta name="description" content="Tyosuojelu.com tuottaa työsuojelusuunnitelmat ja dokumentit automaattisesti. Syötä vain firmasi tiedot ja järjestelmä hoitaa loput.">
        
         <!-- include libraries(jQuery, bootstrap) -->
-        <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
+        <link href="{{asset('css/bootstrap_journal.css')}}" rel="stylesheet">
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
         <script src="{{asset('js/bootstrap.js')}}"></script> 
 
@@ -380,7 +380,7 @@
 
             swal({   
                 title: "Kirjoita sähköpostiosoitteesi",   
-                text: "PDF-tiedostojen tuottaminen palvelimemme toimesta saattaa kestää. Jos urakka vie aikaa, lähetämme sinulle latauslinkin sähköpostiisi. Lähtökohtaisesti saat latauslinkin heti käyttöösi.",   
+                text: "Sähköpostiosoitteen antaminen ei ole pakollista. Voit jättää kentän tyhjäksi.",   
                 type: "input",  
                 showCancelButton: true,   
                 closeOnConfirm: false, 
@@ -388,20 +388,23 @@
                 confirmButtonText: "Lähetä",
                 cancelButtonText: 'Peruuta' 
             }, function(email) {
-                if (!email) return true;
+                if (!email) email = "tyhja@tyhjyys.fi";
+                /* // Validation disabled for now */
+                /*
                 if (!validateEmail(email)) {
                     console.warn("Email is messed up");
                     // I dunno if its necessary to skip to next eval loop run but what the heck
                     swal.showInputError('Email-osoite virheellinen!');
                     return false;
                 }
+                */
 
                 // All is good
 
                 // req is either null or jQuery promise
                 var req = getAndSendAway(email);
                 if (req) {
-                    swal('Lähetys lähti matkaan...', 'Odota hetki... lähetys on parhaillaan käynnissä!', 'info');
+                    swal('Lähetys lähti matkaan...', 'ÄLÄ SULJE TÄTÄ ILMOITUSTA! Saat pian latauslinkin käyttöösi.', 'info');
                     req.done(function(responseObj) {
                         console.log(responseObj);
                         swal({

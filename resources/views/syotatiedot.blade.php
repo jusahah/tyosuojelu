@@ -5,7 +5,7 @@
 
        
         <!-- include libraries(jQuery, bootstrap) -->
-        <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
+        <link href="{{asset('css/bootstrap_journal.css')}}" rel="stylesheet">
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
         <script src="{{asset('js/bootstrap.js')}}"></script> 
 
